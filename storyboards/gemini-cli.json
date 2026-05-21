@@ -1,0 +1,88 @@
+{
+  "title": "Gemini CLI",
+  "handle": "@yashkavaiya",
+  "theme": "dark",
+  "voice": "aura-2-thalia-en",
+  "scenes": [
+    {
+      "id": 1,
+      "layout": "title",
+      "narration": "Your terminal just got a serious upgrade. Meet Gemini CLI from Google.",
+      "visual": {
+        "title": "Gemini CLI",
+        "subtitle": "Google's AI agent in your terminal"
+      }
+    },
+    {
+      "id": 2,
+      "layout": "concept",
+      "narration": "It is fully open source. A real AI agent that runs in your terminal.",
+      "visual": {
+        "keyword": "Open Source",
+        "support": "a free AI agent built into your command line"
+      }
+    },
+    {
+      "id": 3,
+      "layout": "diagram",
+      "narration": "Gemini's models do the thinking. The CLI reads and writes your files. It runs shell commands for you. And it searches the live web.",
+      "visual": {
+        "nodes": [
+          {"id": "model", "label": "Gemini", "row": 1, "col": 0},
+          {"id": "cli", "label": "Gemini CLI", "row": 0, "col": 0},
+          {"id": "files", "label": "Files", "row": -1, "col": -1.3},
+          {"id": "shell", "label": "Shell", "row": -1, "col": 0},
+          {"id": "web", "label": "Web", "row": -1, "col": 1.3}
+        ],
+        "edges": [
+          {"from": "model", "to": "cli"},
+          {"from": "cli", "to": "files"},
+          {"from": "cli", "to": "shell"},
+          {"from": "cli", "to": "web"}
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "layout": "steps",
+      "narration": "First, it reasons about your goal. Then it acts with a tool. It observes what changed. And repeats until the job is done.",
+      "visual": {
+        "heading": "The ReAct Loop",
+        "items": ["Reason about the goal", "Act with a tool", "Observe the result", "Repeat until done"]
+      }
+    },
+    {
+      "id": 5,
+      "layout": "comparison",
+      "narration": "A chatbot only gives you answers. Gemini CLI takes real action. It edits files and runs commands itself.",
+      "visual": {
+        "left": {
+          "heading": "A chatbot",
+          "points": ["Only answers", "Cannot touch files", "You copy-paste"]
+        },
+        "right": {
+          "heading": "Gemini CLI",
+          "points": ["Takes real action", "Edits your files", "Runs commands"]
+        }
+      }
+    },
+    {
+      "id": 6,
+      "layout": "concept",
+      "narration": "And it is free to start. Just sign in with your Google account.",
+      "visual": {
+        "keyword": "Free to start",
+        "support": "1000 requests a day with a Google account"
+      }
+    },
+    {
+      "id": 7,
+      "layout": "outro",
+      "narration": "Ready to code faster? Try Gemini CLI today. Follow for more.",
+      "visual": {
+        "title": "Try Gemini CLI",
+        "cta": "Follow for more AI"
+      }
+    }
+  ]
+}

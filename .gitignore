@@ -1,0 +1,14 @@
+# Secrets
+.env
+
+# Generated output
+output/
+media/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.venv/
+venv/

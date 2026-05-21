@@ -1,0 +1,88 @@
+{
+  "title": "The Agent Harness",
+  "handle": "@yashkavaiya",
+  "theme": "dark",
+  "voice": "aura-2-thalia-en",
+  "scenes": [
+    {
+      "id": 1,
+      "layout": "title",
+      "narration": "What really makes an AI agent work? It is not only the model itself.",
+      "visual": {
+        "title": "The Agent Harness",
+        "subtitle": "What turns a model into an agent"
+      }
+    },
+    {
+      "id": 2,
+      "layout": "concept",
+      "narration": "Meet the harness. It is the system built around the language model.",
+      "visual": {
+        "keyword": "Harness",
+        "support": "the system wrapped around the model"
+      }
+    },
+    {
+      "id": 3,
+      "layout": "diagram",
+      "narration": "The harness wraps around the model. It plugs in a set of tools. It adds long-term memory. And a place to act, the environment.",
+      "visual": {
+        "nodes": [
+          {"id": "llm", "label": "LLM", "row": 1, "col": 0},
+          {"id": "harness", "label": "Harness", "row": 0, "col": 0},
+          {"id": "tools", "label": "Tools", "row": -1, "col": -1.15},
+          {"id": "memory", "label": "Memory", "row": -1, "col": 0},
+          {"id": "env", "label": "Environment", "row": -1, "col": 1.15}
+        ],
+        "edges": [
+          {"from": "llm", "to": "harness"},
+          {"from": "harness", "to": "tools"},
+          {"from": "harness", "to": "memory"},
+          {"from": "harness", "to": "env"}
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "layout": "steps",
+      "narration": "First, perceive the current state. Then decide the next move. Act by calling a tool. Finally, observe what changed.",
+      "visual": {
+        "heading": "The Agent Loop",
+        "items": ["Perceive", "Decide", "Act", "Observe"]
+      }
+    },
+    {
+      "id": 5,
+      "layout": "comparison",
+      "narration": "A bare model only predicts text. A harness lets it call real tools. It also keeps memory and handles errors.",
+      "visual": {
+        "left": {
+          "heading": "Model alone",
+          "points": ["Predicts text", "No tools", "Forgets context"]
+        },
+        "right": {
+          "heading": "With a harness",
+          "points": ["Calls tools", "Keeps memory", "Recovers from errors"]
+        }
+      }
+    },
+    {
+      "id": 6,
+      "layout": "concept",
+      "narration": "So the agent is not the model alone. The harness is what makes it an agent.",
+      "visual": {
+        "keyword": "Harness = Agent",
+        "support": "the model is just one part of the system"
+      }
+    },
+    {
+      "id": 7,
+      "layout": "outro",
+      "narration": "Want smarter agents? Build a better harness. Follow for more.",
+      "visual": {
+        "title": "Build the harness",
+        "cta": "Follow for more AI"
+      }
+    }
+  ]
+}
