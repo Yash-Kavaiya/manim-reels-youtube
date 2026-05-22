@@ -1,3 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reelgen"
+version = "0.1.0"
+description = "Turn text content into 9:16 Manim explainer reels with a Deepgram voiceover and audio-synced captions."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["manim>=0.19.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+reelgen = "reelgen.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/Yash-Kavaiya/manim-reels-youtube"
+
+[tool.setuptools]
+packages = ["reelgen"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 python_files = ["test_*.py"]

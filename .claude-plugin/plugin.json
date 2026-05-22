@@ -1,0 +1,24 @@
+{
+  "name": "manim-reel",
+  "displayName": "Manim Reel",
+  "version": "0.1.0",
+  "description": "Turn text content into 9:16 Manim explainer reels with a Deepgram voiceover and audio-synced captions — Reels, Shorts, and TikTok videos from a simple storyboard JSON.",
+  "author": {
+    "name": "Yash Kavaiya",
+    "url": "https://github.com/Yash-Kavaiya"
+  },
+  "homepage": "https://github.com/Yash-Kavaiya/manim-reels-youtube",
+  "repository": "https://github.com/Yash-Kavaiya/manim-reels-youtube",
+  "keywords": [
+    "video",
+    "reels",
+    "shorts",
+    "tiktok",
+    "manim",
+    "deepgram",
+    "tts",
+    "explainer",
+    "ai",
+    "content-creation"
+  ]
+}

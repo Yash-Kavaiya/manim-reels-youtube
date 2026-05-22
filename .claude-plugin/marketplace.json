@@ -1,0 +1,15 @@
+{
+  "name": "reelgen",
+  "owner": {
+    "name": "Yash Kavaiya",
+    "url": "https://github.com/Yash-Kavaiya"
+  },
+  "plugins": [
+    {
+      "name": "manim-reel",
+      "source": "./",
+      "description": "Turn text content into 9:16 Manim explainer reels with a Deepgram voiceover and audio-synced captions.",
+      "version": "0.1.0"
+    }
+  ]
+}

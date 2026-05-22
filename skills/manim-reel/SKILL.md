@@ -60,12 +60,17 @@ write Manim code; you only write JSON.
   (0 = center, negative = left). Every `edge` must reference real node `id`s.
 - Keep `items` / `points` short — 2-5 words each.
 
-## Prerequisites
+## Setup
 
-- `pip install -r requirements.txt`
-- A Deepgram API key in `.env` as `DEEPGRAM_API_KEY=...` for the voiceover.
+The `reelgen` engine must be installed once (from the project or plugin root):
+
+```
+pip install -e .
+```
+
+- Add a Deepgram API key to `.env` as `DEEPGRAM_API_KEY=...` for the voiceover.
   Without a key the reel still renders, with silent, correctly-timed narration.
-- FFmpeg on PATH.
+- FFmpeg must be on PATH.
 
 See `reference/schema.md` for the full JSON schema and a complete example.
 See `examples/harness-ai-agents.json` for a working 7-scene storyboard.
